@@ -5,46 +5,78 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <title>Coffee Shop</title>
 </head>
+<body>
 <div><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></div>
-<nav class="topnav">
-    <ul>
-        <li><a href="#">Shopping Cart</a></li>
-        <li><a href="#">My Profile</a></li>
-        <li><a href="#">Language</a><ul>
-            <li><a href="#">German</a></li>
-            <li><a href="#">English</a></li>
-        </ul></li></ul>
-</nav>
-<nav class="menu">
-    <ul>
-        <li><a href="#">Coffee</a>
-    <ul>
-        <li><a href="#">Beans</a></li>
-        <li><a href="#">Pods</a></li>
-    </ul>
-    </li>
-        <li><a href="#">Machines</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-</ul>
-</nav>
-<div class="image-container"><div class="centered-text"><h1>Welcome to the world of premium coffee</h1></div>
-    <img src="img/coffeebeans2.jpg"
-         alt="coffee plantation" class="full" /></div>
 
-<div>
-    <div> Our best selling offers</div>
-    <ul>
-        <li><a href="#">Robusta Beans</a></li>
-        <li><a href="#">Cubico Beans</a></li>
-        <li><a href="#">Quindio Pod</a></li>
-        <li><a href="#">Allegria Pods</a></li>
-    </ul>
+<div class="navbar" id="top-navigation">
+    <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+            <a href="#german">German</a>
+            <a href="#english">English</a>
+        </div>
+    </div>
+    <a href="#">Shopping Cart</a>
+    <a href="#">My Account</a>
 </div>
 
-<footer>Contact us <a href="#">here</a></footer>
-<body>
 
+<div class="navbar" id="main-navigation">
+    <div class="dropdown">
+        <button class="dropbtn">Coffee
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Beans</a>
+            <a href="#">Pods</a>
+        </div>
+    </div>
+    <a href="#">Machines</a>
+    <div class="dropdown">
+        <button class="dropbtn">Accessories</button>
+        <div class="dropdown-content">
+            <a href="#cups">Cups</a>
+            <a href="#containers">Containers</a>
+        </div>
+    </div>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</div>
+<div class="image-container">
+    <div class="centered-text"><h1>Welcome to the world of premium coffee</h1></div>
+    <img src="img/coffeebeans.jpg"
+         alt="coffee plantation" class="full"/></div>
+<div id="lower-content">
+<div class="product-display">
+    <div class="center"><h2>Our best selling offers</h2></div>
+    <ul>
+        <li>
+            <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                    class="product-caption"><a href="#">Robusta Beans</a></span>
+            </div>
+        </li>
+        <li>
+            <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                    class="product-caption"><a href="#">Cubico Beans</a></span>
+            </div>
+        </li>
+        <li>
+            <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                    class="product-caption"><a href="#">Volcanica Beans</a></span>
+            </div>
+        </li>
+        <li>
+            <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                    class="product-caption"><a href="#">Diamante Beans</a></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<br/>
+<div id="footercontainer">
+<footer>
+    <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
+</footer>
+</div>
+</div>
 </body>
 </html>
