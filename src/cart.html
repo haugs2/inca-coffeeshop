@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <title>Coffee Shop</title>
+</head>
+<body>
+<div><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></div>
+
+<div class="navbar" id="top-navigation">
+    <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+            <a href="#german">German</a>
+            <a href="#english">English</a>
+        </div>
+    </div>
+    <a href="#">Shopping Cart</a>
+    <a href="#">My Account</a>
+</div>
+
+
+<div class="navbar" id="main-navigation">
+    <div class="dropdown">
+        <button class="dropbtn">Coffee
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Beans</a>
+            <a href="#">Pods</a>
+        </div>
+    </div>
+    <a href="#">Machines</a>
+    <div class="dropdown">
+        <button class="dropbtn">Accessories</button>
+        <div class="dropdown-content">
+            <a href="#cups">Cups</a>
+            <a href="#containers">Containers</a>
+        </div>
+    </div>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</div>
+<div class="shopping-cart">
+    <h2>My Shopping Cart</h2>
+    <table class="center">
+        <tr>
+            <th>Product</th>
+            <th></th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><img src="img/coffeebeanproductsample.jpg" class="product-image-small"></td>
+            <td>Robusta Coffee Beans</td>
+            <td>10 Fr.</td>
+            <td>2</td>
+            <td>20 Fr.</td>
+            <td><a href="#remove">Remove</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/coffeebeanproductsample.jpg" class="product-image-small"></td>
+            <td>Volcanica Coffee Beans</td>
+            <td>8 Fr.</td>
+            <td>1</td>
+            <td>8 Fr.</td>
+            <td><a href="#remove">Remove</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/coffeebeanproductsample.jpg" class="product-image-small"></td>
+            <td>Diamante Coffee Beans</td>
+            <td>11 Fr.</td>
+            <td>1</td>
+            <td>11 Fr.</td>
+            <td><a href="#remove">Remove</a></td>
+        </tr>
+    </table>
+    <button id="btn-continue"><a href="home.html">Continue Shopping</a></button>
+    <button id="btn-checkout">Proceed to Checkout</button>
+</div>
+<div id="lower-content">
+    <div class="product-display">
+        <div class="center"><h2>Our best selling offers</h2></div>
+        <ul>
+            <li>
+                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                        class="product-caption"><a href="#">Robusta Beans</a></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                        class="product-caption"><a href="#">Cubico Beans</a></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                        class="product-caption"><a href="#">Volcanica Beans</a></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
+                        class="product-caption"><a href="#">Diamante Beans</a></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br/>
+    <div id="footercontainer">
+        <footer>
+            <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

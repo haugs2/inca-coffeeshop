@@ -1,0 +1,205 @@
+#title-logo{
+    width:10%;
+}
+
+#title-header{
+    font-family: "Lucida Console", Courier, monospace;
+    text-align:center;
+}
+
+#top-navigation{
+    float: right;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: darkgrey;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.full{
+    width:100%;
+
+}
+
+.image-container{
+    position: relative;
+    text-align: center;
+    color: lightblue;
+}
+
+.product-item{
+    display:block;
+}
+
+product-item span a{
+    text-family: Verdana, Helvetica, sans-serif;
+}
+
+.product-item a{
+    text-decoration:none;
+}
+.product-image-small{
+    height:5em;
+}
+
+.product-display ul{
+    display:flex;
+    list-style-type: none;
+    background-color: lightblue;
+    clear:both;
+    font-family: Verdana, Helvetica, sans-serif;
+
+}
+
+.product-display ul li{
+    padding: 12px 20px;
+}
+
+.product-caption{
+    display:block;
+}
+
+#lower-content{
+    position:relative;
+    display: block;
+}
+footer {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+.centered-text {
+    position: absolute;
+    font-size: x-large;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+table, th, td{
+    font-family:Verdana, Helvetica, sans-serif;
+    white-space: nowrap;
+
+}
+
+th{
+    text-align:left;
+}
+
+th, td{
+    padding: 8px 20px;
+}
+
+
+h2{
+    font-family:Verdana, Helvetica, sans-serif;
+}
+
+.shopping-cart{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+#btn-checkout{
+    float:right;
+}
+
+#btn-continue{
+    float:left;
+}
+
+button{
+    background-color: darkgrey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+
+}
+
+button a{
+    text-decoration: none;
+    color:white;
+}
+.product-image-small{
+    height:5em;
+}
