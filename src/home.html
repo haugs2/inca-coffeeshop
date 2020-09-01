@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <title>Coffee Shop</title>
-</head>
+<head><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/products.css">
+        <title>Coffee Shop</title>
+    </head>
 <body>
-<div><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></div>
+<div><a href="home.html"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
 
 <div class="navbar" id="top-navigation">
     <div class="dropdown">
@@ -17,32 +19,38 @@
         </div>
     </div>
     <a href="cart.html">Shopping Cart</a>
-    <a href="#">My Account</a>
+    <div class="dropdown">
+        <button class="dropbtn">My Account</button>
+        <div class="dropdown-content">
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <a href="register.html">Register</a>
 </div>
 
 
 <div class="navbar" id="main-navigation">
     <div class="dropdown">
-        <button class="dropbtn">Coffee
+        <button class="dropbtn"><a id="navigation-link" href="coffee.html">Coffee</a>
         </button>
         <div class="dropdown-content">
             <a href="#">Beans</a>
             <a href="#">Pods</a>
         </div>
     </div>
-    <a href="#">Machines</a>
+    <a href="machines.html">Machines</a>
     <div class="dropdown">
         <button class="dropbtn">Accessories</button>
         <div class="dropdown-content">
-            <a href="#cups">Cups</a>
-            <a href="#containers">Containers</a>
+            <a href="cups.html">Cups & Containers</a>
         </div>
     </div>
-    <a href="#">About Us</a>
+    <a href="aboutus.html">About Us</a>
     <a href="#">Contact</a>
 </div>
 <div class="image-container">
-    <div class="centered-text"><h1>Welcome to the world of premium coffee</h1></div>
+    <div class="image-overlay-text"><h1>Welcome to the world of premium coffee</h1></div>
     <img src="img/coffeebeans.jpg"
          alt="coffee plantation" class="full"/></div>
 <div id="lower-content">
@@ -75,6 +83,7 @@
 <div id="footercontainer">
 <footer>
     <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
+    <div><a href="#priceslist">See our Pricelist</a></div>
 </footer>
 </div>
 </div>

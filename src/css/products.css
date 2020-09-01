@@ -1,0 +1,395 @@
+/* Very general */
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+span, p {
+    text-align: left;
+}
+
+
+/* Title of the homepage */
+#title-logo {
+    width: 10%;
+}
+
+#title-header {
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+}
+
+#top-navigation {
+    float: right;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: darkgrey;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* center images, logos and titles */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.center-wide{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+/* text overlayed over an image */
+.image-overlay-text {
+    position: absolute;
+    font-size: x-large;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+/* let an image stretch across the entire page */
+.full {
+    width: 100%;
+}
+
+/* a container for the home page main image and the text across it */
+.image-container {
+    position: relative;
+    text-align: center;
+    color: lightblue;
+}
+
+
+/* Product related for lower product bar with current offers */
+
+/* a container for a single product */
+.product-item {
+    display: block;
+}
+
+/* link for a single product */
+.product-item a {
+    text-decoration: none;
+}
+
+/* small product image as used in the lower product bar */
+.product-image-small {
+    height: 5em;
+}
+
+/* a product caption as used in the lower product bar*/
+.product-caption {
+    display: block;
+
+}
+
+
+/* medium product image as used in the About Us page */
+.product-image-medium {
+    height: 12em;
+}
+
+/* Listing of all available products per category */
+.product-display ul {
+    display: flex;
+    list-style-type: none;
+    background-color: lightblue;
+    clear: both;
+    font-family: Verdana, Helvetica, sans-serif;
+
+}
+
+/* a single item listed in the list of available products per category */
+.product-display ul li {
+    padding: 12px 20px;
+}
+
+.table-product-display td {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 30px
+}
+
+
+/* a section distinguishing the lower content of the web page starting with the lower product bar */
+#lower-content {
+    position: relative;
+    display: block;
+}
+
+footer {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+/* A link which itself extends to sub-links in the navigation menu */
+#navigation-link {
+    padding: 0px 0px 0px 0px
+}
+
+
+/* add a big margin below the About Us container */
+#about-us-container {
+    margin-bottom: 100px;
+}
+
+/** {
+    box-sizing: border-box;
+}*/
+
+/* Add padding to the container containing the login */
+.login-container {
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Similarly set a style for the standard button */
+.standardbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+
+.standardbtn:hover {
+    opacity: 1;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    background-color: darkgrey;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+
+}
+
+/* A link embedded in a button */
+.buttonlink {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+
+/* Product page */
+
+/* A bigger image used on a product page */
+.single-product-image {
+    height: 20em;
+}
+
+.single-product {
+    text-align: center
+}
+
+/* the smaller text describing product details */
+.product-description {
+    font-size: 10px;
+}
+
+.product-info-upper {
+    text-align: center;
+}
+
+.item-image-container, .item-details {
+    display: inline-block;
+}
+
+.item-details label {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.pricelabel{
+    font-weight:bold;
+    font-size:20px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+/* User Profile Page */
+/* a small image used for the user icon */
+#user-icon {
+    height: 7em;
+    width: auto;
+}
+
+/* Table with user profile info */
+.user-info table, td, tr {
+    text-align: left
+}
+
+
+#profile-logoutbtn {
+    background-color: darkgrey;
+
+}
+
+#profile-button-container {
+    display: inline-block;
+}
+.left-column, .right-column{
+    display:inline-block;
+    width:50%;
+}
+
+#checkout{
+    text-align: center;
+}
+.left-column, .right-column{
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+}
+
+
+.payment-container{
+    width:50%;
+}
+
+.shipment-address-container{
+    width:50%;
+}
+
+#checkout tr, td{
+    padding: 2px 18px 2px 18px;
+}
+.checkout-btns{
+    float:left;
+}
+
+#checkout h3{
+    padding-left:0;
+    text-align:left;
+}

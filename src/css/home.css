@@ -141,11 +141,15 @@ footer {
     font-family: Verdana, Helvetica, sans-serif;
 }
 
-.centered-text {
+.image-overlay-text {
     position: absolute;
     font-size: x-large;
     top: 40%;
     left: 70%;
     transform: translate(-50%, -50%);
     font-family: Verdana, Helvetica, sans-serif;
+}
+
+#navigation-link{
+    padding: 0px 0px 0px 0px
 }

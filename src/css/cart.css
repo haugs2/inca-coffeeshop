@@ -141,7 +141,7 @@ footer {
     font-family: Verdana, Helvetica, sans-serif;
 }
 
-.centered-text {
+.image-overlay-text {
     position: absolute;
     font-size: x-large;
     top: 40%;
@@ -202,4 +202,11 @@ button a{
 }
 .product-image-small{
     height:5em;
+}
+
+.item-details{
+    display:inline;
+}
+#navigation-link{
+    padding: 0px 0px 0px 0px
 }
