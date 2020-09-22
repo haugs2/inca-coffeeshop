@@ -116,12 +116,22 @@ span, p {
 /* text overlayed over an image */
 .image-overlay-text {
     position: absolute;
-    font-size: x-large;
-    top: 40%;
+    font-size: large;
+    top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
     font-family: Verdana, Helvetica, sans-serif;
 }
+
+.image-overlay-text-center {
+    position: absolute;
+    font-size: xx-large;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
 
 /* let an image stretch across the entire page */
 .full {
@@ -332,12 +342,16 @@ hr {
     margin-bottom: 10px;
 }
 
+.item-details-machine label{
+    margin-bottom: 10px;
+}
 .pricelabel{
     font-weight:bold;
     font-size:20px;
     padding-bottom: 16px;
     padding-right: 16px;
 }
+
 
 /* User Profile Page */
 /* a small image used for the user icon */
@@ -393,3 +407,29 @@ hr {
     padding-left:0;
     text-align:left;
 }
+
+
+#pricelist{
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+#pricelist td, th{
+    padding: 8px 10px 8px 10px;
+}
+
+.coffee-bean-row{
+    background-color: lightblue;
+}
+
+.coffee-pod-row{
+    background-color: lightseagreen;
+}
+
+.coffee-machines-row{
+    background-color: lightpink;
+}
+
+.coffee-cups-row{
+    background-color: lightcoral;
+}
+
