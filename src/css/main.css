@@ -40,6 +40,16 @@ span, p {
     text-decoration: none;
 }
 
+.navbar current-page-navigation-item{ !important;
+    float: left;
+    font-size: 16px;
+    color:blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+}
 /* The dropdown container */
 .dropdown {
     float: left;
@@ -103,7 +113,7 @@ span, p {
     text-align: center;
 }
 
-.center-wide{
+.center-wide {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -342,12 +352,13 @@ hr {
     margin-bottom: 10px;
 }
 
-.item-details-machine label{
+.item-details-machine label {
     margin-bottom: 10px;
 }
-.pricelabel{
-    font-weight:bold;
-    font-size:20px;
+
+.pricelabel {
+    font-weight: bold;
+    font-size: 20px;
     padding-bottom: 16px;
     padding-right: 16px;
 }
@@ -374,62 +385,65 @@ hr {
 #profile-button-container {
     display: inline-block;
 }
-.left-column, .right-column{
-    display:inline-block;
-    width:50%;
+
+.left-column, .right-column {
+    display: inline-block;
+    width: 50%;
 }
 
-#checkout{
+#checkout {
     text-align: center;
 }
-.left-column, .right-column{
-    -ms-flex: 1;  /* IE 10 */
+
+.left-column, .right-column {
+    -ms-flex: 1; /* IE 10 */
     flex: 1;
 }
 
 
-.payment-container{
-    width:50%;
+.payment-container {
+    width: 50%;
 }
 
-.shipment-address-container{
-    width:50%;
+.shipment-address-container {
+    width: 50%;
 }
 
-#checkout tr, td{
+#checkout tr, td {
     padding: 2px 18px 2px 18px;
 }
-.checkout-btns{
-    float:left;
+
+.checkout-btns {
+    float: left;
 }
 
-#checkout h3{
-    padding-left:0;
-    text-align:left;
+#checkout h3 {
+    padding-left: 0;
+    text-align: left;
 }
 
 
-#pricelist{
+#pricelist {
     font-family: Verdana, Helvetica, sans-serif;
 }
 
-#pricelist td, th{
+#pricelist td, th {
     padding: 8px 10px 8px 10px;
 }
 
-.coffee-bean-row{
+.coffee-bean-row {
     background-color: lightblue;
 }
 
-.coffee-pod-row{
+.coffee-pod-row {
     background-color: lightseagreen;
 }
 
-.coffee-machines-row{
+.coffee-machines-row {
     background-color: lightpink;
 }
 
-.coffee-cups-row{
+.coffee-cups-row {
     background-color: lightcoral;
 }
 
