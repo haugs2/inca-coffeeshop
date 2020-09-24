@@ -9,8 +9,6 @@ $pages = array(
         'About' => 'about.php',
         'Contact' => 'contact.php'
 
-
-
 );
 $pagesRight = array(
     'Shopping Cart' => 'cart.php',

@@ -12,7 +12,6 @@
 
 
 
-<?php include "nav.php" ?>
 <?php include 'nav.php' ?>
 <div class="center">
     <h2>About us</h2>
