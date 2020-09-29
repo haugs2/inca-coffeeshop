@@ -10,38 +10,15 @@
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Cotopaxi Coffee Capsules</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/capsuleproductsample.jpg">
-            </div>
-            <div class="item-details">
-                <label class="pricelabel">6.-/10pcs</label><br>
-                <div><label for="coffee-sizes">Select a size:</label>
-                    <select name="sizes" id="coffee-sizes">
-                        <option value="10">10 pcs</option>
-                        <option value="20">20 pcs</option>
-                    </select></div>
-                <br>
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="99">
-                <br><br>
-            </div>
+    <?php
 
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>ORIGIN:
-                Origin: Ecuador<br>
-                Growing altitude: 1700 masl<br>
-                A great example of how coffee cultivars evolve - Ethiopian seedlings brought into Ecuador for a
-                fascinating
-                experience in the cup.</p>
-        </div>
+    $coffeeProduct = array('title' => 'Cotopaxi Coffee Capsules', 'kind'=>'pads', 'price_per_unit' => '6.-', 'origin' => 'Ecuador', 'growing_altitude' => '1700',
+        'description' => 'A great example of how coffee cultivators evolve - Ethiopian seedlings brought into Ecuador for a fascinating  experience in the cup.');
+    include 'coffeeProduct.php';
 
-
-    </div>
+    ?>
     <div id="lower-content">
-<?php include 'bestsellingitems.php' ?>
+        <?php include 'bestsellingitems.php' ?>
         <br/>
         <div id="footercontainer">
             <footer>
