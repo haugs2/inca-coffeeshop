@@ -48,31 +48,7 @@
     </table>
 </div>
 <div id="lower-content">
-    <div class="product-display">
-        <div class="center"><h2>Our best selling offers</h2></div>
-        <ul>
-            <li>
-                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
-                        class="product-caption"><a href="robusta.php">Robusta Beans</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
-                        class="product-caption"><a href="cubico.php">Cubico Beans</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
-                        class="product-caption"><a href="volcanico.php">Volcanico Beans</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="product-item"><img src="img/coffeebeanproductsample.jpg" class="product-image-small"><span
-                        class="product-caption"><a href="diamante.php">Diamante Beans</a></span>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <?php include 'bestsellingitems.php' ?>
     <br/>
     <div id="footercontainer">
         <footer>

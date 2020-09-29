@@ -171,6 +171,7 @@ span, p {
 /* small product image as used in the lower product bar */
 .product-image-small {
     height: 5em;
+    border-radius: 20%;
 }
 
 /* a product caption as used in the lower product bar*/
