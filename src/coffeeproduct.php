@@ -3,7 +3,7 @@
     <div class="product-info-upper">
         <div class="item-image-container"><img
                     class="single-product-image" <?php if ($coffee_array['kind'] == 'pads'){ ?>
-                    src="img/capsuleproductsample.jpg"><?php } else { ?>src="img/coffeebeanproductsample.jpg"<?php } ?>
+                    src="img/capsuleproductsample.jpg"><?php } else { ?>src="img/coffeebeanproductsample.jpg"><?php } ?>
         </div>
         <div class="item-details">
             <label class="pricelabel"><?php echo $coffee_array['price_per_unit'];
@@ -33,5 +33,4 @@
             Growing altitude: <?php echo $coffee_array['growing_altitude'] ?>masl<br>
             <?php echo $coffee_array['description'] ?></p>
     </div>
-
 </div>

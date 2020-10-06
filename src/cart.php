@@ -9,10 +9,6 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div class="shopping-cart">
     <h2>My Shopping Cart</h2>
@@ -53,15 +49,5 @@
     <button id="btn-continue"><a href="home.php">Continue Shopping</a></button>
     <button id="btn-checkout"><a href="checkout.php">Proceed to Checkout</a></button>
 </div>
-<div id="lower-content">
-    <?php include 'bestsellingitems.php' ?>
-    <br/>
-    <div id="footercontainer">
-        <footer>
-            <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
-            <div><a href="pricelist.php">See our Pricelist</a></div>
-        </footer>
-    </div>
-</div>
-</body>
+<?php include 'footer.php' ?></body>
 </html>

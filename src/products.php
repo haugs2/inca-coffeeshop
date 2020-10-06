@@ -1,7 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
-
 <?php
-
 $headers = array('Product Number', 'Product Name', 'Product Category', 'Product description', 'Price');
 $products = array([1, 'Robusta', 'Beans', 'Coffee Beans', '8.-/250g'],
                   [2, 'Altura', 'Beans', 'Coffee Beans', '7.-/250g'],
@@ -24,9 +22,7 @@ $products = array([1, 'Robusta', 'Beans', 'Coffee Beans', '8.-/250g'],
 
 $colormap = array('Beans'=>'lightblue', 'Pods'=>'lightseagreen', 'Machines'=>'lightpink', 'Cups'=>'lightcoral');
 
-
 ?>
-
 <div id="pricelist" class="center">
     <h2>Product List</h2>
     <table>
@@ -39,7 +35,6 @@ $colormap = array('Beans'=>'lightblue', 'Pods'=>'lightseagreen', 'Machines'=>'li
             <tr style="background-color:<?php echo $colormap[$product[2]]?>">
                 <?php foreach($product as $entry){?>
                 <td><?php echo $entry?></td>
-
                 <?php } ?>
             </tr>
        <?php } ?>

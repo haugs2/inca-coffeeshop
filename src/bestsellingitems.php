@@ -5,7 +5,6 @@ $bestSellingOffers = array(['Robusta', 'robusta.php', 'img/coffeebeanproductsamp
                             ['Quindio', 'quindio.php', 'img/capsuleproductsample.jpg']);
 
 ?>
-
 <div class="product-display">
     <div class="center"><h2>Our best selling offers</h2></div>
     <ul>

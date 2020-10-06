@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <title>Coffee Shop</title>
-    </head>
-<body>
+<?php include 'header.php' ?><body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
 <?php include 'nav.php' ?>
 <div class="image-container">
