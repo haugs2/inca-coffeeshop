@@ -1,3 +1,4 @@
+<?php include 'functions.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,30 +10,14 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Coffee Tamper</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image"
-                                                   src="img/tamper-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">25.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-          An indispensable tool for every Espresso Machine owner, the tamper is used to press coffee into the sieve carrier with the right amount of pressure.
-            Forms a flat surface on the coffee powder and thus ensures optimal water saturation. Made of stainless steel.
-        </p></div>
-    </div>
-
+    <?php $product_array = ['title' => 'Coffee Tamper', 'price' => '25. -', 'img_link' => "img/tamper-sample.jpg",
+        'description' => ' An indispensable tool for every Espresso Machine owner, the tamper is used to press coffee into the sieve carrier with the right amount of pressure.
+            Forms a flat surface on the coffee powder and thus ensures optimal water saturation. Made of stainless steel.'];
+    return productPage('machine', $product_array); ; ?>
 </div>
+
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>
     <br/>

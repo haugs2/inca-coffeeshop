@@ -1,3 +1,4 @@
+<?php include 'functions.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,27 +10,12 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>French Press La Galina</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/french-press-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">55.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-           A simple yet robust french press made of steel and premium glass. Use a coarsely ground coffee, wait 4 minutes and press down the flask.
-        Pour and enjoy a highly aromatic coffee. Leaves no residue in cup</p></div>
-    </div>
-
+    <?php $product_array = ['title' => 'French Press La Galina', 'price' => '55. -', 'img_link' => "img/french-press-sample.jpg",
+        'description' => ' A simple yet robust french press made of steel and premium glass. Use a coarsely ground coffee, wait 4 minutes and press down the flask.
+        Pour and enjoy a highly aromatic coffee. Leaves no residue in cup'];
+    return productPage('machine', $product_array); ; ?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

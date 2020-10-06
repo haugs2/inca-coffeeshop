@@ -1,3 +1,4 @@
+<?php include 'functions.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,42 +10,16 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Robusta Coffee Beans</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/coffeebeanproductsample.jpg">
-            </div>
-            <div class="item-details">
-                <label class="pricelabel">8.-/250g</label><br>
-                <div><label for="coffee-sizes">Select a size:</label>
-                <select name="sizes" id="coffee-sizes">
-                    <option value="250">250g</option>
-                    <option value="500">500g</option>
-                </select></div><br>
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="99">
-                <br><br>
-            </div>
-
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>ORIGIN:
-            100% Robusta from Peru<br>
-            Growing altitude: 1400 - 1600 masl<br>
-            A pure Robusta, very strong, both in flavor and caffeine. Richly chocolatey in the best Robusta tradition.
+    <?php
+    $coffee_array = array('title' => 'Robusta Coffee Beans', 'kind' => 'beans', 'price_per_unit' => '8.-', 'origin' => 'Peru', 'growing_altitude' => '1600',
+        'description' => 'A pure Robusta, very strong, both in flavor and caffeine. Richly chocolatey in the best Robusta tradition.
             Excellent with milk and sugar, or sweetened condensed milk, but is also very low in acid so can be drunk
             black even by individuals who are sensitive to acidity. Robusta is high in body and crema and makes a
-            fabulous espresso alone or paired with your favorite arabica.</p></div>
-
-
-    </div>
-
+            fabulous espresso alone or paired with your favorite arabica.');
+    return productpage('coffee', $coffee_array)
+    ?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

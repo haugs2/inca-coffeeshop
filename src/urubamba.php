@@ -1,3 +1,4 @@
+<?php include 'functions.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,40 +10,14 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Urubamba Coffee Capsules</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/capsuleproductsample.jpg">
-            </div>
-            <div class="item-details">
-                <label class="pricelabel">5.50/10pcs</label><br>
-                <div><label for="coffee-sizes">Select a size:</label>
-                    <select name="sizes" id="coffee-sizes">
-                        <option value="10">10 pcs</option>
-                        <option value="20">20 pcs</option>
-                    </select></div>
-                <br>
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="99">
-                <br><br>
-            </div>
-
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>ORIGIN:
-            Origin: Peru<br>
-            Growing altitude: 1300-1800 masl<br>
-            Fully washed and dried in the sun, Fair Trade, Organic. Tastes like freshly ground.</p>
-        </div>
-
-
-    </div>
+    <?php
+    $coffee_array = array('title' => 'Urubamba Coffee Capsules', 'kind' => 'pads', 'price_per_unit' => '5.50', 'origin' => 'Peru', 'growing_altitude' => '1500',
+        'description' => 'Fully washed and dried in the sun, Fair Trade, Organic. Tastes like freshly ground.');
+    return productpage('coffee', $coffee_array)
+    ?>
+</div>
     <div id="lower-content">
         <?php include 'bestsellingitems.php' ?>
         <br/>

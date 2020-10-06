@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,27 +10,13 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Thermos bottle</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/thermos-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">20.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-            Keep hot drinks warm!. This elegantly designed thermos comes in handy when you take your coffee for the road
-            Made of stainless steel. Holds 0.5l</p></div>
-    </div>
-
+    <?php
+    $product_array=['title'=>'Thermos Bottle', 'price'=>'20.-', 'description'=>'Keep hot drinks warm!. This elegantly designed thermos comes in handy when you take your coffee for the road
+            Made of stainless steel. Holds 0.5l', 'img_link'=>'img/thermos-sample.jpg'];
+    return productpage('accessory', $product_array);
+    ?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

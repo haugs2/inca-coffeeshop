@@ -1,3 +1,4 @@
+<?php include 'functions.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,44 +10,26 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Capsule machine Quechua</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image"
-                                                   src="img/capsule-machine-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">320.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-            One of our all favorite products the Quechua pod machine is ideal for every coffe lover who prefers a simple handling and a quick pouring!
+    <?php $product_array = ['title' => 'Capsule Machine Quechua', 'price' => '320. -', 'img_link' => "img/capsule-machine-sample.jpg",
+        'description' => 'One of our all favorite products the Quechua pod machine is ideal for every coffe lover who prefers a simple handling and a quick pouring!
             Compatible with our own and all Nespresso compatible Capsules. Machine heats up in only 15 seconds and comes with a removable 1L water tank.
-            The used capsule container can hold up to 20 used capsules. Cup support can be adjusted for tall glasses. off mode after 10min of inactivity.
-        </p></div>
-    </div>
-
+            The used capsule container can hold up to 20 used capsules. Cup support can be adjusted for tall glasses. off mode after 10min of inactivity.'];
+    return productPage('machine', $product_array); ?>
 </div>
-<div id="lower-content">
-    <?php include 'bestsellingitems.php' ?>
-    <br/>
-    <div id="footercontainer">
-        <footer>
-            <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
-            <div><a href="pricelist.php">See our Pricelist</a></div>
-        </footer>
+    <div id="lower-content">
+        <?php include 'bestsellingitems.php' ?>
+        <br/>
+        <div id="footercontainer">
+            <footer>
+                <div id="contact">Contact us: <a href="#mail">info@coffeeshop.com</a></div>
+                <div><a href="pricelist.php">See our Pricelist</a></div>
+            </footer>
+        </div>
     </div>
-</div>
 </body>
 </html>
-
 <meta charset="UTF-8">
 <title>Our Coffee</title>
 </head>

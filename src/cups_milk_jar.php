@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,26 +10,12 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Barista Milk jar</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/milk-jar-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">18.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-           Stainless steel milk jar with graduated measurement. Holds 350ml</p></div>
-    </div>
-
+    <?php
+    $product_array = ['title'=> 'Barista Milk Jar', 'price'=>'18.-', 'description'=>'Stainless steel milk jar with graduated measurement. Holds 350ml',
+    'img_link'=>'img/milk-jar-sample.jpg'];
+    return productpage('accessory', $product_array);?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

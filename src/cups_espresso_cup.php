@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,26 +10,11 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Espresso cup</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/espresso-cup-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">6.90/pc</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-            A simple Espresso cup made of porcelain with a timeless design. Holds 80ml.</p></div>
-    </div>
-
+    <?php  $product_array = ['title'=>'Espresso Cup', 'price'=>'6.90', 'description'=>' A simple Espresso cup made of porcelain with a timeless design. Holds 80ml.',
+    'img_link'=>"img/espresso-cup-sample.jpg"];
+    return productpage('accessory', $product_array);?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,28 +10,12 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Reusable bamboo coffee mug</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/reusable-mug-sample.jpg">
-            </div>
-            <div class="item-details-machine">
-                <label class="pricelabel">20.-</label><br>
-            </div>
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>
-            No more paper mugs! Not only does this reusable mug made from bamboo wood look more colorful and trendy,
+    <?php $product_array=['title'=>'Reusable Bamboo Coffee Mug', 'price'=>'20.-', 'description'=>'No more paper mugs! Not only does this reusable mug made from bamboo wood look more colorful and trendy,
             by using it you also reduce waste and protect the environment. Holds 330ml. With a rubber band to protect
-            your hands from hot temperature</p></div>
-    </div>
-
+            your hands from hot temperature', 'img_link'=>'img/reusable-mug-sample.jpg'];
+    return productpage('accessory', $product_array);?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>

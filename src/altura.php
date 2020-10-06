@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head><!DOCTYPE html>
@@ -9,41 +10,15 @@
     </head>
 <body>
 <div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-
-
-
-
 <?php include 'nav.php' ?>
 <div id="coffe-products" class="center">
-    <h2>Altura Coffee Beans</h2>
-    <div class="single-product">
-        <div class="product-info-upper">
-            <div class="item-image-container"><img class="single-product-image" src="img/coffeebeanproductsample.jpg">
-            </div>
-            <div class="item-details">
-                <label class="pricelabel">7.-/250g</label><br>
-                <div><label for="coffee-sizes">Select a size:</label>
-                    <select name="sizes" id="coffee-sizes">
-                        <option value="250">250g</option>
-                        <option value="500">500g</option>
-                    </select></div><br>
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="99">
-                <br><br>
-            </div>
-
-        </div>
-        <button class="standardbtn">Add to Cart</button>
-        <div class="product-description"><p>ORIGIN:
-            100% Altura from Peru<br>
-            Growing altitude: 1200 masl<br>
-            Organic Altura coffee beans from the Cusco region in Quillabamba, Peru. This is a washed coffee with sweet
+    <?php
+    $coffee_array = array('title' => 'Altura Coffee Beans', 'kind' => 'beans', 'price_per_unit' => '7.-', 'origin' => 'Peru', 'growing_altitude' => '1200',
+        'description' => '  Organic Altura coffee beans from the Cusco region in Quillabamba, Peru. This is a washed coffee with sweet
             notes of cocoa, hazelnut and caramel. 100% Arabica. Specialty coffee. Medium roast designed for a good
-            balanced espresso. Roasted in France. 250g coffee beans.</p></div>
-
-
-    </div>
-
+            balanced espresso. Roasted in France. 250g coffee beans.');
+    return productpage('coffee', $coffee_array)
+    ?>
 </div>
 <div id="lower-content">
     <?php include 'bestsellingitems.php' ?>
