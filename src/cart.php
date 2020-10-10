@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/cart.css">
-        <title>Coffee Shop</title>
-    </head>
 <body>
-<div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-<?php include 'nav.php' ?>
 <div class="shopping-cart">
     <h2>My Shopping Cart</h2>
     <table class="center">
@@ -49,5 +40,5 @@
     <button id="btn-continue"><a href="home.php">Continue Shopping</a></button>
     <button id="btn-checkout"><a href="checkout.php">Proceed to Checkout</a></button>
 </div>
-<?php include 'footer.php' ?></body>
+</body>
 </html>

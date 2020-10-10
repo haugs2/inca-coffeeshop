@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'header.php' ?>
 <body>
-<div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-<?php include 'nav.php' ?>
 <div class="center">
     <h2>About us</h2>
        <div id="about-us-container">
@@ -18,7 +15,6 @@
        </div>
    </h2>
 </div>
-<?php include 'footer.php' ?>
 </body>
 </html>
 

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'header.php' ?><body>
-<div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-<?php include 'nav.php' ?>
+<body>
 <div id=user-profile" class="center">
     <h2>My profile</h2>
     <img class="center" id="user-icon" src="img/coffeebeanface.jpg">
@@ -25,13 +23,6 @@
     <button class="standardbtn"id="profile-logoutbtn">Logout</button>
     </div>
 </div>
-<?php include 'footer.php' ?>
-</html>
-
-<meta charset="UTF-8">
-<title>Our Coffee</title>
-</head>
-<body>
-
 </body>
 </html>
+

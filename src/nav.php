@@ -3,17 +3,17 @@
 <?php
 
 $pages = array(
-        'Coffee' => 'coffee.php',
-        'Machines' => 'machines.php',
-        'Cups & Containers' => 'cups.php',
-        'About' => 'about.php',
-        'Contact' => 'contact.php'
+        'Coffee' => add_param('menu.php', 'id', 1),
+        'Machines' => add_param('menu.php', 'id',2),
+        'Cups & Containers' => add_param('menu.php', 'id', 3),
+        'About' => add_param('menu.php', 'id', 4),
+        'Contact' => add_param('menu.php', 'id', 5)
 
 );
 $pagesRight = array(
-    'Shopping Cart' => 'cart.php',
-    'My Account' => array('Profile' => 'profile.php', 'Login' => 'login.php'),
-    'Register' => 'register.php',
+    'Shopping Cart' => add_param('menu.php', 'id', 6),
+    'My Account' => array('Profile' => add_param('menu.php', 'id', 7), 'Login' => add_param('menu.php', 'id', 8)),
+    'Register' => add_param('menu.php', 'id', 8),
 );
 
 $currentPage = basename($_SERVER['REQUEST_URI']);
