@@ -1,8 +1,16 @@
+<?php
+$title = ['en'=>'List of Products', 'de'=>'Unsere Produkte'];?>
+
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'header.php' ?><body>
-<div><a href="home.php"><img id="title-logo" src="img/coffeeshopTemp.png" class="center"/></a></div>
-<?php include 'nav.php' ?>
-<?php include 'products.php' ?>
-<?php include 'footer.php' ?></body>
-</html>
+<body>
+<div id="coffee-products" class="center">
+    <h2><?php echo $title[$language]?></h2>
+    <?php
+    show_pricelist($language);?>
+</div>
+</body>
+
+
+
+

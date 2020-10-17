@@ -7,7 +7,7 @@ $product_id = get_param('productId',0);?>
 <div id="coffee-products" class="center">
     <?php
     $product_array = $products[$product_id];
-    productpage($product_array)
+    productpage($product_array, $language)
     ?>
 </div>
 </body>
