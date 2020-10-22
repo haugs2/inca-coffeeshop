@@ -44,7 +44,9 @@ function render_content($pageId=0){
         8=>'login.php',
         9=>'product.php',
         10=>'register.php',
-        11=>'pricelist.php'
+        11=>'pricelist.php',
+        12=>'buy.php',
+        13=>'shipping.php'
     ];
     include $pagesById[$pageId];
 }
@@ -172,13 +174,10 @@ function productpage($product_array, $language){
  echo '<img class="single-product-image" src="'.$product_array['img_link'].'"></div>';
  echo '<div class="item-details">';
  echo '<label class="pricelabel">'.get_price($product_array, $language).'</label><br>';
- if($product_array['price_unit']){
-     echo '<div><label for="coffee-sizes">Select a size:</label><select name="sizes" id="coffee-sizes">';
-     echo '<option>'.$product_array['price_unit'][$language].'</option>';
-     echo '</select></div><br>';
- }
- echo '<div><label for="quantity">Quantity</label><input type="number" id="quantity" name="quantity" min="1" max="99"></div><br><br></div></div>';
- echo '<button class="standardbtn">Add to Cart</button>';
+ $url_buy ='menu.php?id=12';
+ $url_buy = add_param($url_buy, 'lang', $language);
+ $url_buy = add_param($url_buy, 'productId', $product_array['id']);
+ echo '<button class="standardbtn"><a class="btn-link" href="'.$url_buy.'">Buy Now</a></button>';
  echo get_product_description($product_array, $language);
  echo '</div>';
 }
