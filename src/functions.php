@@ -46,7 +46,8 @@ function render_content($pageId=0){
         10=>'register.php',
         11=>'pricelist.php',
         12=>'buy.php',
-        13=>'shipping.php'
+        13=>'shipping.php',
+        14=>'confirmation.php'
     ];
     include $pagesById[$pageId];
 }
@@ -217,4 +218,7 @@ function translate_navigation($key, $language='en'){
     ];
     return $navigation[$key][$language];
 }
+
+
+
 

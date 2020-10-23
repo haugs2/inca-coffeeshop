@@ -17,7 +17,7 @@ $pagesById =[
 $products = [
         1 => array('id'=>1, 'name'=>'quindio', 'category'=>'coffee', 'title' => ['en'=>'Quindio Coffee Capsules',
             'de'=>'Quindio Kaffeekapseln'], 'link'=>"menu.php?id=9&productId=1", 'img_link'=>"img/capsuleproductsample.jpg",
-            'kind' => 'pads', 'price_per_unit' => '5.50', 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Colombia', 'de'=>'Kolumbien'], 'growing_altitude' => '1400',
+            'kind' => 'pads', 'price_per_unit' => 5.50, 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Colombia', 'de'=>'Kolumbien'], 'growing_altitude' => '1400',
         'description' => ['en'=>'Made from Excelso grade beans which are carefully selected from the coffee fincas (farms) located in the
             mountainous region of Quindío. Because this coffee is grown at a high elevation, at over 1,400 metres, it is
             characterised by a softness, natural acidity and intense aroma. Capsules that taste like freshly ground coffee.',
@@ -29,7 +29,7 @@ $products = [
                 'size'=>[['en'=>'250g', 'de'=>'250g'], ['en'=>'500g', 'de'=>'500g']]]),
 
       2 => array('id'=>2, 'name'=>'altura', 'category'=>'coffee','title' => ['en'=>'Altura Coffee Beans', 'de'=>'Altura Kaffeebohnen'], 'link'=>"menu.php?id=9&productId=2",
-          'img_link'=>"img/coffeebeanproductsample.jpg", 'kind' => 'beans', 'price_per_unit' => '7.-', 'price_unit'=>['en'=>'250g', 'de'=>'250g'],
+          'img_link'=>"img/coffeebeanproductsample.jpg", 'kind' => 'beans', 'price_per_unit' => 7, 'price_unit'=>['en'=>'250g', 'de'=>'250g'],
           'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' => '1200',
         'description' => ['en'=>'Organic Altura coffee beans from the Cusco region in Quillabamba, Peru. This is a washed coffee with sweet
             notes of cocoa, hazelnut and caramel. 100% Arabica.  Medium roast designed for a good
@@ -41,7 +41,7 @@ $products = [
 
      3 => array('id'=>3, 'name'=>'cotopaxi', 'category'=>'coffee', 'title' => ['en'=>'Cotopaxi Coffee Capsules',
          'de'=>'Cotopaxi Kaffeekapseln'], 'link'=>"menu.php?id=9&productId=3", 'img_link'=>"img/capsuleproductsample.jpg",
-         'kind' => 'pads', 'price_per_unit' => '6.-', 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Ecuador', 'de'=>'Ecuador'], 'growing_altitude' => '1700',
+         'kind' => 'pads', 'price_per_unit' => 6, 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Ecuador', 'de'=>'Ecuador'], 'growing_altitude' => '1700',
         'description' => ['en'=>'A great example of how coffee cultivators evolve - Ethiopian seedlings brought into Ecuador for a fascinating  experience in the cup.',
         'de'=>'Ein wunderbares Beispiel, dafür wie der Kaffeeanbau sich entwickelt hat - Äthiopische Setzlinge, 
         die nach Ecuador immportiert wurden für ein faszinierendes Geschmackserlebnis'],
@@ -49,7 +49,7 @@ $products = [
 
     4 => array('id'=>4, 'name'=>'cubico', 'category'=>'coffee', 'title' => ['en'=>'Cubico Coffee Beans',
         'de'=>'Cubico Kaffeebohnen'], 'link'=>"menu.php?id=9&productId=4", 'img_link'=>"img/coffeebeanproductsample.jpg",
-        'kind' => 'beans', 'price_per_unit' => '7.50', 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru','de'=>'Peru'], 'growing_altitude' => '1600',
+        'kind' => 'beans', 'price_per_unit' => 7.50, 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru','de'=>'Peru'], 'growing_altitude' => '1600',
         'description' => ['en'=>'Freshly Roasted Peruvian Beans - Cubico Coffees are roasted in small batches and our roasters sign and date
             each bag to ensure freshness.
             Cupping Notes - Smooth body, intense citrus and lemon acidity, followed by nutty and toffee sweetness, with
@@ -65,7 +65,7 @@ $products = [
 
      5 => array('id'=>5, 'name'=>'diamante', 'category'=>'coffee', 'title' => ['en'=>'Diamante Coffee Beans',
          'de'=>'Diamante Kaffeebohnen'], 'link'=>"menu.php?id=9&productId=5",
-         'img_link'=>"img/coffeebeanproductsample.jpg",'kind' => 'beans', 'price_per_unit' => '10.-', 'price_unit'=>['en'=>'250g', 'de'=>'250g'],
+         'img_link'=>"img/coffeebeanproductsample.jpg",'kind' => 'beans', 'price_per_unit' => 10, 'price_unit'=>['en'=>'250g', 'de'=>'250g'],
          'origin' => ['en'=>'Colombia', 'de'=>'Kolumbien'], 'growing_altitude' => '1700',
         'description' => ['en'=>'This coffee from the El
             Diamante farm is first and foremost a great representation of this incredible region, with the typical Huila
@@ -82,7 +82,7 @@ $products = [
 
      6 => array('id'=>6, 'name'=>'robusta', 'category'=>'coffee', 'title' => ['en'=>'Robusta Coffee Beans', 'de'=>'Robusta Kaffeebohnen'],
      'link'=>"menu.php?id=9&productId=6", 'img_link'=>"img/coffeebeanproductsample.jpg",
-         'kind' => 'beans', 'price_per_unit' => '8.-', 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' => '1600',
+         'kind' => 'beans', 'price_per_unit' => 8, 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' => '1600',
         'description' => ['en'=>'A pure Robusta, very strong, both in flavor and caffeine. Richly chocolatey in the best Robusta tradition.
             Excellent with milk and sugar, or sweetened condensed milk, but is also very low in acid so can be drunk
             black even by individuals who are sensitive to acidity. Robusta is high in body and crema and makes a
@@ -96,14 +96,14 @@ $products = [
 
     7 => array('id'=>7, 'name'=>'urubamba', 'category'=>'coffee','title' => ['en'=>'Urubamba Coffee Capsules',
         'de'=>'Urubamba Kaffeekapseln'], 'link'=>"menu.php?id=9&productId=7", 'img_link'=>"img/capsuleproductsample.jpg",
-        'kind' => 'pads', 'price_per_unit' => '5.50', 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' => '1500',
+        'kind' => 'pads', 'price_per_unit' => 5.50, 'price_unit'=>['en'=>'10pcs', 'de'=>'10 Stk.'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' => '1500',
         'description' => ['en'=>'Fully washed and dried in the sun, Fair Trade, Organic. Tastes like freshly ground.',
             'de'=>'Gewaschener und sonnengetrockneter Kaffee, Fair Trade und organisch. Schmeckt wie frisch gemahlen'],
         'options'=>['size'=>[['en'=>'10pcs', 'de'=>'10 Stk'], ['en'=>'20pcs', 'de'=>'20 Stk'], ['en'=>'30pcs', 'de'=>'30 Stk']]]),
 
      8 => array('id'=>8, 'name'=>'volcanico', 'category'=>'coffee','title' => ['en'=>'Volcanico Coffee Beans',
          'de'=>'Volcanico Kaffeebohnen'],'link'=>"menu.php?id=9&productId=8", 'img_link'=>"img/coffeebeanproductsample.jpg",
-         'kind' => 'beans', 'price_per_unit' => '10.-', 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' =>'1000',
+         'kind' => 'beans', 'price_per_unit' => 10, 'price_unit'=>['en'=>'250g', 'de'=>'250g'], 'origin' => ['en'=>'Peru', 'de'=>'Peru'], 'growing_altitude' =>'1000',
         'description' => ['en'=>'100% Arabica. This Peru Coffee is also known as "Tres Cumbres" and organically grown in the Chanchamayo region at the
             highest ranges of the South American Andes and the Amazon River basin.
             The Peruvian Coffee produces a complex full bodied coffee with floral, smoky overtones,  a gentle acidity and a clean, bright aromatic finish.',
@@ -114,7 +114,7 @@ $products = [
              'size'=>[['en'=>'250g', 'de'=>'250g'], ['en'=>'500g', 'de'=>'500g']]]),
 
     9 => ['id'=>9, 'name'=>'quechua', 'category'=>'machine', 'title' => ['en'=>'Capsule Machine Quechua', 'de'=>'Quechua Kapselmaschine'],
-        'link'=>"menu.php?id=9&productId=9", 'price_per_unit' => '320. -', 'price_unit'=>0, 'img_link' => "img/capsule-machine-sample.jpg",
+        'link'=>"menu.php?id=9&productId=9", 'price_per_unit' => 320, 'price_unit'=>0, 'img_link' => "img/capsule-machine-sample.jpg",
         'description' => ['en'=>'One of our all favorite products the Quechua pod machine is ideal for every coffee lover who prefers a simple handling and a quick pouring!
             Compatible with our own and all Nespresso compatible Capsules. Machine heats up in only 15 seconds and comes with a removable 1L water tank.
             The used capsule container can hold up to 20 used capsules. Cup support can be adjusted for tall glasses. off mode after 10min of inactivity.',
@@ -125,7 +125,7 @@ $products = [
             ]],
 
     10 => ['id'=>10, 'name'=>'galina', 'category'=>'machine', 'title' => ['en'=>'French Press La Galina', 'de'=>'Kaffeepresse La Galina'],
-        'link'=>"menu.php?id=9&productId=10",  'price_per_unit' => '55. -', 'price_unit'=>0, 'img_link' => "img/french-press-sample.jpg",
+        'link'=>"menu.php?id=9&productId=10",  'price_per_unit' => 55, 'price_unit'=>0, 'img_link' => "img/french-press-sample.jpg",
         'description' => ['en'=> 'A simple yet robust french press made of steel and premium glass. Use a coarsely ground coffee, wait 4 minutes and press down the flask.
         Pour and enjoy a highly aromatic coffee. Leaves no residue in cup',
             'de'=>'Eine einfache und robuste Kaffeepresse aus Stahl und hochwertigem Glas. Idealerweise einen grob gemahlenen Kaffee verwenden. 
@@ -135,7 +135,7 @@ $products = [
         ]],
 
     11 => ['id'=>11, 'name'=>'piura', 'category'=>'machine', 'title' => ['en'=>'Espresso machine Piura', 'de'=>'Espressomaschine Piura'],
-        'link'=>"menu.php?id=9&productId=11", 'price_per_unit' => '2200. -', 'price_unit'=>0, 'img_link' => "img/espresso-machine-sample.jpg",
+        'link'=>"menu.php?id=9&productId=11", 'price_per_unit' => 2200, 'price_unit'=>0, 'img_link' => "img/espresso-machine-sample.jpg",
         'description' => ['en'=>'Prepare tasty espresso within a minute.The Piura Espresso machine unites a grinder
             with an exquisite espresso machine. Use the digital temperature control to ensure that water has the perfect temperature.
             Froth your milk by hand using the milk frother when making Latte or Cappuccino. Grinding strength can be adjusted depending on the type of beans.
@@ -148,7 +148,7 @@ $products = [
             ['en'=>'metallic red', 'de'=>'metallisch rot']]]],
 
     12 => ['id'=>12, 'name'=>'tamper', 'category'=>'machine', 'title' => ['en'=>'Coffee Tamper', 'de'=>'Kaffee Tamper'],
-        'link'=>"menu.php?id=9&productId=12", 'price_per_unit' => '25. -', 'price_unit'=>0, 'img_link' => "img/tamper-sample.jpg",
+        'link'=>"menu.php?id=9&productId=12", 'price_per_unit' => 25, 'price_unit'=>0, 'img_link' => "img/tamper-sample.jpg",
         'description' => ['en'=>'An indispensable tool for every Espresso Machine owner, the tamper is used to press 
         coffee into the sieve carrier with the right amount of pressure.
             Forms a flat surface on the coffee powder and thus ensures optimal water saturation. Made of stainless steel.',
@@ -157,21 +157,21 @@ $products = [
         'options'=>['color'=>[['en'=>'brown wood', 'de'=>'holz'], ['en'=>'black', 'de'=>'schwarz'], ['en'=>'white', 'de'=>'weiss']]]],
 
     13 =>['id'=>13, 'name'=>'cup_espresso', 'category'=>'accessory', 'title' => ['en'=>'Espresso Cup', 'de'=>'Espressotasse'],
-        'link'=>"menu.php?id=9&productId=13", 'price_per_unit' => '6.90', 'price_unit'=>0, 'description' =>['en'=> ' A simple 
+        'link'=>"menu.php?id=9&productId=13", 'price_per_unit' => 6.90, 'price_unit'=>0, 'description' =>['en'=> ' A simple 
     Espresso cup made of porcelain with a timeless design. Holds 80ml.', 'de'=>'
     Eine schlichte Espressotasse aus Porzellan mit zeitlosem Design. Fassungsvermögen 80ml'], 'img_link' => "img/espresso-cup-sample.jpg",
         'options'=>['color'=>[['en'=>'red', 'de'=>'rot'], ['en'=>'lightgreen', 'de'=>'hellgrün'], ['en'=>'white', 'de'=>'weiss'], ['en'=>'lightblue', 'de'=>'hellblau']]
         ]],
 
     14=>['id'=>14, 'name'=>'cup_cappuccino', 'category'=>'accessory',  'title' => ['en'=>'Cappuccino Cup', 'de'=>'Cappuccinotasse'],
-        'link'=>"menu.php?id=9&productId=14",'price_per_unit' => '8.-', 'price_unit'=>0,
+        'link'=>"menu.php?id=9&productId=14",'price_per_unit' => 8, 'price_unit'=>0,
         'description' => ['en'=>'Cappuccino cup made of porcelain with a timeless design. Holds 160ml',
             'de'=>'Cappuccinotasse aus Porzellan mit zeitlosem Design. Umfasst 160ml'],
         'img_link' => 'img/cappucino-cup-sample.jpg', 'options'=>['color'=>[['en'=>'red', 'de'=>'rot'], ['en'=>'lightgreen', 'de'=>'hellgrün'], ['en'=>'white', 'de'=>'weiss'], ['en'=>'lightblue', 'de'=>'hellblau']]
         ]],
 
     15=>['id'=>15, 'name'=>'cup_coffee', 'category'=>'accessory', 'title' => ['en'=>'Retro Coffee Cup',
-        'de'=>'Retro Kaffeetasse'], 'link'=>"menu.php?id=9&productId=15", 'price_per_unit' => '7.50', 'price_unit'=>0,
+        'de'=>'Retro Kaffeetasse'], 'link'=>"menu.php?id=9&productId=15", 'price_per_unit' => 7.50, 'price_unit'=>0,
         'description' => ['en'=>'Klassische Tasse aus Keramik mit dem 
         charakteristischen schwarzen Rand. Umfasst 125ml', 'en'=>'Classic retro enamel mug with the typical black rim. Holds 125ml'],
         'img_link' =>'img/coffeecupretrosample.jpg',
@@ -179,7 +179,7 @@ $products = [
         ]],
 
     16=>['id'=>16, 'name'=>'cup_reusable', 'category'=>'accessory', 'title' => ['en'=>'Reusable Bamboo Coffee Mug',
-        'de'=>'Recyclebarer Kaffeebecher aus Bambus'], 'link'=>"menu.php?id=9&productId=16",'price_per_unit' => '20.-',
+        'de'=>'Recyclebarer Kaffeebecher aus Bambus'], 'link'=>"menu.php?id=9&productId=16",'price_per_unit' => 20,
         'price_unit'=>0, 'description' => [
         'en'=>'No more paper mugs! Not only does this reusable mug made from bamboo wood look more colorful and trendy,
             by using it you also reduce waste and protect the environment. Holds 330ml. With a rubber band to protect
@@ -192,7 +192,7 @@ $products = [
         ]],
 
     17=>['id'=>17, 'name'=>'milkjar', 'category'=>'accessory', 'title'=> ['en'=>'Barista Milk Jar', 'de'=>'Barista Milchkrug'], 'link'=>"menu.php?id=9&productId=17",
-        'price_per_unit'=>'18.-', 'price_unit'=>0, 'description'=>['en'=>'Stainless 
+        'price_per_unit'=>18, 'price_unit'=>0, 'description'=>['en'=>'Stainless 
     steel milk jar with graduated measurement. Holds 350ml or 750ml', 'de'=>'Milchkanne aus Edelstahl mit graduierter Messkennzeichnung. Fassungsvermögen 350ml oder 750ml.'],
         'img_link'=>'img/milk-jar-sample.jpg',
         'options'=>['color'=>[['en'=>'silver', 'de'=>'silber'], ['en'=>'black', 'de'=>'schwarz']],
@@ -200,7 +200,7 @@ $products = [
         ]],
 
     18=>['id'=>18, 'name'=>'thermos', 'category'=>'accessory', 'title'=>['en'=>'Thermos Bottle', 'de'=>'Thermosflasche'],
-        'link'=>"menu.php?id=9&productId=18", 'price_per_unit'=>'20.-', 'price_unit'=>0, 'description'=>['en'=>'Keep hot drinks warm!. 
+        'link'=>"menu.php?id=9&productId=18", 'price_per_unit'=>20, 'price_unit'=>0, 'description'=>['en'=>'Keep hot drinks warm!. 
     This elegantly designed thermos comes in handy when you take your coffee for the road
             Made of stainless steel. Holds 550ml or 1000ml',
         'de'=>'Hält heisse Getränke warm! Diese elegante Thermosflasche ist Ihr bester Freund wenn Sie ihren Kaffee für 

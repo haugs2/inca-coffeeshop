@@ -8,7 +8,10 @@ span, p {
     text-align: left;
 }
 
-h1, h2, h3, h4, label{
+div{
+    border: 1px solid dodgerblue;;
+}
+h1, h2, h3, h4, label, tr, th, td, span, li{
     font-family:Verdana, Helvetica, sans-serif;
 }
 
@@ -255,11 +258,12 @@ footer {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password], input[type=email], input[type=number], select {
-    width: 50%;
+.shipping-form input[type=text], input[type=password], input[type=email], input[type=number], select {
+    display:inline-block;
+    vertical-align: top;
+    width:30%;
     padding: 15px;
     margin: 5px 0 22px 0;
-    display: inline-block;
     border: none;
     background: #f1f1f1;
 }
@@ -520,4 +524,50 @@ input[type=submit]{
 
 .bottom-checkbox-container{
     margin-top:3em;
+}
+
+.link-with-icon {
+    padding: .5em;
+    line-height: 1.7;
+}
+
+.confirmation-form{
+    overflow: hidden;
+    display: block;
+}
+.confirmation-form  h3{
+    color: dodgerblue;
+}
+
+confirmation-form input{
+    border:0;
+}
+
+.center-button{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+#shipping-form-container{
+    width:100%;
+    white-space: nowrap;
+}
+
+#shipping-form{
+
+    display: inline-block;
+}
+
+#shipping-form-container div{
+    vertical-align: top;
+    display: inline-block;
+}
+
+#plz{
+    width:4%;
+}
+
+#streetno{
+    width:4%;
 }
